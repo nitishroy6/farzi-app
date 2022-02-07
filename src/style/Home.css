@@ -1,4 +1,4 @@
-.App {
+/* .App {
     text-align: center;
   }
   
@@ -36,4 +36,23 @@
       transform: rotate(360deg);
     }
   }
+   */
   
+  .header{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .sub-header{
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+  }
+  .sub-header1{
+    margin-left: 80%;
+    margin-top: -3%;
+    font-weight: bold;
+    display: flex;
+  }

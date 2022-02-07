@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import '../style/Home.css';
+import '../style/Header.css';
+import Header1 from '../components/Header1.js';
 
 function Home() {
 //   const [color, setColor] = useState("1");
@@ -18,10 +20,11 @@ function Home() {
 
   return (
     <>
+    <Header1/>
     <div>
-        <h1>Cricket Live Score Ticker Application Modeling</h1>
-        <h3>India</h3>
-        <h5>111-10(14.6Ov)</h5>
+        <h1 className='header'>Cricket Live Score Ticker Application Modeling</h1>
+        <h3 className='sub-header'>India</h3>
+        <h5 className='sub-header1'>111-10(14.6Ov)</h5>
     </div>
     </>
   );
