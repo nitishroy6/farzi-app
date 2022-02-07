@@ -1,0 +1,46 @@
+/* @media (max-width : 500px){
+    frazi-app{
+        background-color: green;
+    }
+} */
+
+.farzi-app{
+    max-width: 100%;
+    background-color: rgb(23, 156, 94);
+    border-width: 1rem;
+}
+
+.logo a{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.Score li{
+    margin: 1%;
+    padding-left: 1%;
+    font-weight: bold;
+    font-size: large;
+    /* text-transform: uppercase; */
+    flex-direction: row;
+    list-style-type: none;
+    display: inline;
+    cursor: pointer;
+    transition: 1s;
+    color: aliceblue;
+}
+
+.Score li :hover{
+    background-color: rgb(48, 47, 47);
+}
+
+.Score input{
+    border-radius: 1rem;
+    width: 10%;
+}
+
+.Score img{
+    width: 3rem;
+    cursor: pointer;
+    height: 2rem;
+}
