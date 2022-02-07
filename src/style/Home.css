@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -98,11 +99,6 @@ grid-column: 4/6;
   text-align: right;
 }
 
-/* .menu-link{
- 
-} */
-
-
 .menu-link ul{
   height: 9.29rem;
   display: flex;
@@ -145,6 +141,7 @@ grid-column: 4/6;
 }
 
 .App {
+/* .App {
     text-align: center;
   }
   
@@ -182,4 +179,25 @@ grid-column: 4/6;
       transform: rotate(360deg);
     }
   }
+
    */
+   */
+  
+  .header{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .sub-header{
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+  }
+  .sub-header1{
+    margin-left: 80%;
+    margin-top: -3%;
+    font-weight: bold;
+    display: flex;
+  }
