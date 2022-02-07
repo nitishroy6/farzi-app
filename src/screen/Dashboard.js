@@ -5,7 +5,7 @@ import { CgUserlane } from 'react-icons/cg';
 import { BiSearchAlt } from 'react-icons/bi';
 import {FaUserCircle} from 'react-icons/fa';
 
-function Home()  {
+function Dashboard()  {
 
   return (
     <>
@@ -79,7 +79,7 @@ function Home()  {
   );
 }
 
-export default Home;
+export default Dashboard;
 
 
 
