@@ -21,6 +21,8 @@ function App() {
   return (
     <>
     <Home/>
+
+  {/* <h1> helloo</h1> */}
     </>
   );
 }

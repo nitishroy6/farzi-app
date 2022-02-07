@@ -1,3 +1,146 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.livescore{
+padding: 1rem .5rem;
+background-color: #fff;
+border-radius: 10px;
+
+  }
+
+.livescore:hover{
+background-color: rgb(49, 145, 255);
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.2);
+  color:  #fff;
+}
+
+.main-nav{
+  width: 100%;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 8rem 1fr 3fr 1fr 8rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+}
+
+.react-icon{
+height: 3.6rem;
+width: 3.1rem;
+color: rgb(17, 128, 255);
+
+}
+
+.farzi{
+  color:rgb(255, 140, 119);
+  width: 3.4rem;
+  cursor: alias;
+}
+
+.logo{
+  grid-column: 2/3;
+  align-items: center;
+  cursor: default;
+  }
+
+  .logo ul{
+    display: flex;
+    position: relative;
+    top: 25.3px;
+    justify-content: flex-start;
+
+  }
+
+.logo h1{
+  background: -webkit-radial-gradient(rgb(0, 0, 0),rgb(163, 163, 163),rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: cursive;
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+}
+
+.logo h1 span{
+  font-size: 3.3rem;
+  
+}
+
+.icons{
+grid-column: 4/6;
+}
+
+.icons ul{
+  height: 8.9rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  justify-content: flex-end;
+}
+
+.icons ul li{
+  text-align: right;
+}
+
+.menu-link ul{
+  height: 9.29rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-link ul li{
+  font-size: 1.93rem;
+  font-weight: 400;
+  }
+  
+  .menu-link ul li a{
+    
+    color: rgb(85, 78, 78);
+    transition: .5s;
+  }
+  
+  .menu-link ul li a:hover:not(.livescore){
+  transform-origin: left;
+  color: rgb(104, 0, 224);
+  text-decoration: underline;
+  transition: .5s;
+  }
+
+.hero-section{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(17, 128, 255, 0.3), 0 0 10px rgba(17, 128, 255, 0.3), 0 0 10px rgba(17, 128, 255, 0.3);
+}
+
+
+/* .heading{
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.App {
 /* .App {
     text-align: center;
   }
@@ -36,6 +179,8 @@
       transform: rotate(360deg);
     }
   }
+
+   */
    */
   
   .header{

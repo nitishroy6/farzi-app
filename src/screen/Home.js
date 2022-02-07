@@ -1,22 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import '../style/Home.css';
 import '../style/Header.css';
 import Header1 from '../components/Header1.js';
-
-function Home() {
-//   const [color, setColor] = useState("1");
-  // useEffect(() => {
-  //  clickhandle();
-  // });
-
-//   function clickhandle(){
-//     if (color == "1") {
-//       setColor("2");
-//     }
-//     if (color == "2"){
-//     setColor("1");
-//     }
-//   }
+function Home()  {
 
   return (
     <>
@@ -31,3 +17,19 @@ function Home() {
 }
 
 export default Home;
+
+
+
+{/* 
+/
+  //  clickhandle();
+  // 
+
+  // function clickhandle(){
+    if (color == "1") {
+      setColor("2");
+    }
+    if (color == "2"){
+    setColor("1");
+    }
+  } */}
