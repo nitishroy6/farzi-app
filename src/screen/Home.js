@@ -1,8 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import '../style/Home.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 function Home() {
-//   const [color, setColor] = useState("1");
+   const [runs, setRuns] = useState("154");
+   const [wickets, setWickets] = useState("3");
+   const [overs, setOvers] = useState("5.0");
+   const [isLive, setIsLive] = useState(false);
+   useEffect(() => {
+    document.title = "Client App"
+  }, [])
   // useEffect(() => {
   //  clickhandle();
   // });
@@ -18,10 +27,20 @@ function Home() {
 
   return (
     <>
-    <div>
-        <h1>Cricket Live Score Ticker Application Modeling</h1>
+    <div className='body'>
+      <div>
+        <h2 className='header'>Live Cricket Score</h2>
+        <button onClick={() => {isLive ? setIsLive(false) : setIsLive(true)}}>{isLive?'End Session':'Go Live'}</button>
+        </div>
+        <hr/>
+        {isLive?
+        <div>
         <h3>India</h3>
-        <h5>111-10(14.6Ov)</h5>
+        <h5>{runs}-{wickets}({overs}v)</h5>
+        </div>
+        :
+        <div className='text-center'>There are no matches at the moment. Please check back later.</div>
+        }
     </div>
     </>
   );
