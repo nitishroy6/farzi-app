@@ -5,16 +5,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee ,} from '@fortawesome/free-solid-svg-icons';
 import {
      Button,
      Container,
      Row,
-     Col
+     Col,Form   
     } from 'react-bootstrap';
 function ModalTest() {
   return (
     <>
-    <button>Lunch Modal</button><br/><br/>
+    <Button variant="secondary" className="mx-2">Button #2</Button>
+    <button className="btn btn-success">Lunch Modal</button><br/><br/>
+    <FontAwesomeIcon icon={faCoffee}/>
+    {/* <FontAwesomeIcon icon={user}/> */}
+    <FontAwesomeIcon icon="fa-solid fa-user-graduate" />
     <Container>
   <Row className="justify-content-md-center">
     <Col xs lg="2">
