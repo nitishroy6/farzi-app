@@ -6,14 +6,15 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../style/Header.css';
 import Header1 from '../components/Header1.js';
+import ModalTest from '../components/ModalTest.js';
 var sInterval;
 function Home() {
-   const [runs, setRuns] = useState("154");
-   const [wickets, setWickets] = useState("3");
+   const [runs, setRuns] = useState('');
+   const [wickets, setWickets] = useState('');
    const [overs, setOvers] = useState("5.0");
    const [isLive, setIsLive] = useState(false);
    useEffect(() => {
-    document.title = "Client App"
+    document.title = "Client Application"
   }, [])
   // useEffect(() => {
   //  clickhandle();
@@ -28,6 +29,7 @@ function Home() {
 //     }
 //   }
 // useEffect(()=> {
+//   alert("hello")
 //   fetchScore();
 //   },[]);
 
@@ -37,12 +39,8 @@ function Home() {
      }, 5000);
    },[]);
 const fetchScore = async () => {
-let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJudW1iZXJfZXhpc3QiOjEsInN0YXR1cyI6MjAwLCJhYmMiOiI3NjU0MzA0OTQ4IiwibWVzc2FnZSI6IkxvZ2dlZGluIFN1Y2Nlc3NmdWxseSIsInZhbGlkaXR5Ijp0cnVlLCJudW1iZXIiOm51bGx9.pp1Thx6rDVYr-YnkOeOtyDLFvrBDfrApzBF3OtekaIE"; 
-
-const response = await fetch ('https://farziapp.noobdeveloper.site/api/getdata',{
-
+ const response = await  fetch('https://farziapp.noobdeveloper.site/api/getdata',{
 method:'GET',
-
 headers:{
   'Accept' : 'application/json',
   'Content-Type' : 'application/json'
@@ -52,13 +50,21 @@ headers:{
  let retrieved = await response.json();
  console.log("cateq",retrieved);
    let totalRun = [];
+   let totalWicket = [];
+   let totalBall = [];
       retrieved.map(item => {
-  
-        // totalRun.push({
-        //       label: item.subcate_title,
-        //       value: item.subcate_id
-        //   })
+        totalRun.push(item.run)
+        totalWicket.push(item.wicket)
+        totalBall.push(item.ball)
       });
+      var tRun = totalRun.reduce((a,v) => a =  a + v, 0 );
+      var Twicket = totalWicket.reduce((a,v) => a =  a + v, 0 );
+      var balls = totalBall.reduce((a,v) => a =  a + v, 0 );
+      setRuns(tRun);
+      setWickets(Twicket);
+      setOvers(balls);
+      
+
 
 // const categoryList = await retrieved.info;
 // // console.log("category",categoryList);
@@ -67,11 +73,12 @@ headers:{
 }
 
   return (
-    <div className='body'>
+    <div className='text-center'>
     <Header1/>
+    <ModalTest/>
       <div>
         <h2 className='header'>Live Cricket Score</h2>
-        <button onClick={() => {isLive ? setIsLive(false) : setIsLive(true)}}>{isLive?'End Session':'Go Live'}</button>
+        <button className='btn btn-warning p-5 md-3' onClick={() => {isLive ? setIsLive(false) : setIsLive(true)}}>{isLive?'End Session':'Go Live'}</button>{' '}
         </div>
         <hr/>
         {isLive?
@@ -80,7 +87,7 @@ headers:{
         <h5>{runs}-{wickets}({overs}v)</h5>
         </div>
         :
-        <div className='text-center'>There are no matches at the moment. Please check back later.</div>
+        <div className='text-center font-italic'>There are no matches at the moment. Please check back later.</div>
         }
     
         {/* <h1 className='header'>Cricket Live Score Ticker Application Modeling</h1>
