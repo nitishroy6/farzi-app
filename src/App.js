@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import Home from './screen/Home';
+import {Routes, Route,BrowserRouter} from "react-router-dom";
+import Home from './screen/Home.js';
+import Dashboard from './screen/Dashboard.js';
+import Test from './screen/Test.js';
+import Header1 from './components/Header1'
 
 function App() {
   const [color, setColor] = useState("1");
@@ -19,7 +23,14 @@ function App() {
   }
   return (
     <>
-    <Home/>
+
+  <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route  path="/dashboard" element={<Dashboard/>} />
+        <Route  path="/test" element={<Test/>} />
+    </Routes>
+    </BrowserRouter>
     </>
   );
 }
