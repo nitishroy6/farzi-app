@@ -6,7 +6,11 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../style/Header.css';
 import Header1 from '../components/Header1.js';
+import Footer from '../components/Footer.js';
 import ModalTest from '../components/ModalTest.js';
+import VideoBG from '../components/VideoBG.js';
+import { NavLink } from "react-router-dom";
+
 var sInterval;
 function Home() {
    const [runs, setRuns] = useState('');
@@ -60,6 +64,7 @@ headers:{
       var tRun = totalRun.reduce((a,v) => a =  a + v, 0 );
       var Twicket = totalWicket.reduce((a,v) => a =  a + v, 0 );
       var balls = totalBall.reduce((a,v) => a =  a + v, 0 );
+
       setRuns(tRun);
       setWickets(Twicket);
       setOvers(balls);
@@ -75,15 +80,16 @@ headers:{
   return (
     <div className='text-center'>
     <Header1/>
-    <ModalTest/>
+    {/* <VideoBG /> */}
+    {/* <ModalTest/> */}
       <div>
-        <h2 className='header'>Live Cricket Score</h2>
+        <h2 className='header'><NavLink to="/dashboard">Live Cricket Score</NavLink></h2>
         <button className='btn btn-warning p-5 md-3' onClick={() => {isLive ? setIsLive(false) : setIsLive(true)}}>{isLive?'End Session':'Go Live'}</button>{' '}
         </div>
         <hr/>
         {isLive?
         <div>
-        <h3>India</h3>
+        <h3 >India</h3>
         <h5>{runs}-{wickets}({overs}v)</h5>
         </div>
         :
@@ -92,7 +98,9 @@ headers:{
     
         {/* <h1 className='header'>Cricket Live Score Ticker Application Modeling</h1>
         <h3 className='sub-header'>India</h3>
+
         <h5 className='sub-header1'>111-10(14.6Ov)</h5> */}
+      <Footer/>
     </div>
   );
 }

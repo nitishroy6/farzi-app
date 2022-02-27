@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import icon from "../assets/search-icon.jpg";
-import profile from "../assets/profile-icon.jpg";
+import icon from "../Assets/search-icon.jpg";
+import profile from "../Assets/profile-icon.jpg";
 function Header1() {
   return (
     <>
@@ -8,7 +8,7 @@ function Header1() {
         {/* <div className="farzi-app"> */}
           <ul className="Score">
             <li className="logo">
-              <a>FARZI-APP</a>
+              <a>CRICKET-CLUB</a>
             </li>
             <li>
               <a>Live Scores</a>
