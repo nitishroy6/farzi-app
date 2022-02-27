@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../style/Header.css';
 import Header1 from '../components/Header1.js';
 import ModalTest from '../components/ModalTest.js';
+import ScoreCard from '../components/ScoreCard.js';
 var sInterval;
 function Home() {
    const [runs, setRuns] = useState('');
