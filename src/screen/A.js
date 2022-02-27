@@ -1,16 +1,5 @@
-import React from 'react';
-import '../style/Home.css';
-
-// import { CgUserlane } from 'react-icons/cg';
-// import { BiSearchAlt } from 'react-icons/bi';
-// import {FaUserCircle} from 'react-icons/fa';
-
-function Dashboard()  {
-
-  return (
-    <>
-    <div className='main-nav'>
-        <div className='logo'>
+<div className='main-nav'>
+       {/* <div className='logo'>
         <ul>
           <li>
             <a href=''>
@@ -25,7 +14,7 @@ function Dashboard()  {
           </h1>
           </li>
         </ul>   
-      </div>
+      </div> */}
       <div className='menu-link'>
        <ul>
           <li>
@@ -71,28 +60,7 @@ function Dashboard()  {
 
     {/* hero section */}
 
-    <section className='hero-section'>
+    {/* <section className='hero-section'>
       <marquee scrollamount="8"><h3>WELCOME TO THE OFFICIAL FARZI-APP WEBSITE.</h3></marquee> 
 
-    </section> 
-    </>
-  );
-}
-
-export default Dashboard;
-
-
-
-{/* 
-/
-  //  clickhandle();
-  // 
-
-  // function clickhandle(){
-    if (color == "1") {
-      setColor("2");
-    }
-    if (color == "2"){
-    setColor("1");
-    }
-  } */}
+    </section> */}

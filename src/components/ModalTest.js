@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import icon from "../assets/search-icon.jpg";
-import profile from "../assets/profile-icon.jpg";
+import icon from "../Assets/search-icon.jpg";
+import profile from "../Assets/profile-icon.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
