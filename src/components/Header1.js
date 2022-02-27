@@ -29,10 +29,10 @@ function Header1() {
               <a>Teams</a>
             </li>
             <li>
-              <a>Videos</a>
+              <a>SignUp</a>
             </li>
             <li>
-              <a>Rankings</a>
+              <a>Login</a>
             </li>
             <input type="search" placeholder="Search Here.." />
             <img src={icon}></img>
