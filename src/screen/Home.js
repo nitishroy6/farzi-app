@@ -21,6 +21,7 @@ function Home() {
     <div>
         <h1>Cricket Live Score Ticker Application Modeling</h1>
         <h3>India</h3>
+        <h1>hello</h1>
         <h5>111-10(14.6Ov)</h5>
     </div>
     </>
