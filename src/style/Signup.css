@@ -1,0 +1,51 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-color: rgb(155, 109, 197); */
+    /* background-size: cover; */
+    background-position: center;
+}
+.Login-form
+{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+    background: white;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    
+}
+.Login-form h1{
+    font-weight: bolder;
+    font-size: 200%;
+}
+button
+{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.signup-btn
+{
+    background-color: rgb(23, 156, 94);
+}
+/* .signup-btn :hover{
+  background-color: rgba(2, 92, 50, 0.541);
+} */
+/* .form{
+    border-radius: 2px solid black;
+} */
+.email-class{
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

@@ -8,6 +8,7 @@ import Dashboard from './screen/Dashboard.js';
 import Test from './screen/Test.js';
 import Header1 from './components/Header1'
 import Login from './screen/Login.js';
+import Signup from './screen/Signup.js';
 
 function App() {
   const [color, setColor] = useState("1");
@@ -32,6 +33,7 @@ function App() {
         <Route  path="/dashboard" element={<Dashboard/>} />
         <Route  path="/test" element={<Test/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
     </Routes>
 
     </BrowserRouter>

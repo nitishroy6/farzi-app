@@ -37,7 +37,7 @@ function Header1() {
               <a>Teams</a>
             </li>
             <li>
-              <a>SignUp</a>
+              <a href="signup">SignUp</a>
             </li>
             <li>
               <a href="login">Login</a>
