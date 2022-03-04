@@ -8,6 +8,7 @@ import '../style/Header.css';
 import Header1 from '../components/Header1.js';
 import Footer from '../components/Footer.js';
 import ModalTest from '../components/ModalTest.js';
+import Scores from '../components/ScoreCard.js';
 import VideoBG from '../components/VideoBG.js';
 import { NavLink } from "react-router-dom";
 
@@ -100,6 +101,7 @@ headers:{
         <h3 className='sub-header'>India</h3>
 
         <h5 className='sub-header1'>111-10(14.6Ov)</h5> */}
+      <Scores/>
       <Footer/>
     </div>
   );
